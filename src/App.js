@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { Nav, Header, Article, Footer } from './components/HTMLParts';
+import CityData from './components/CityData';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Header focim="Városok" color="red"/>
+
+<section>
+ <Nav />
+
+ <Article data={CityData.london}/>
+
+</section>
+  <Footer  labjegyzet='teszt 1' color='blue'/>
+
     </div>
   );
 }
