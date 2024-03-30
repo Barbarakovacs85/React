@@ -1,5 +1,5 @@
 import './App.css';
-import { Nav, Header, Article, Footer } from './components/HTMLParts';
+import { Nav, Header, Article, Footer, Counter } from './components/HTMLParts'; // Counter importálása hozzáadva
 import CityData from './components/CityData';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 <section>
  <Nav />
 
- <Article data={CityData.london}/>
+ <Counter/>
 
 </section>
   <Footer  labjegyzet='teszt 1' color='blue'/>
